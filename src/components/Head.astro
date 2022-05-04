@@ -1,0 +1,41 @@
+
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Homepage</title>
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href={Astro.resolve("../styles/global.css")}>
+    <style global>
+	    #wrapper {
+	        @apply bg-zinc-100
+	    }
+	    header, footer {
+	        @apply bg-zinc-600 p-2 text-center text-white
+	    }
+	    #hero {
+	        @apply p-6 text-center
+	    }
+	    #wrapper nav {
+	        @apply bg-zinc-400 text-center
+	    }
+	    main section {
+	        @apply bg-zinc-200 p-6
+	    }
+	    aside {
+	        @apply bg-zinc-300 p-6
+	    }
+        h1 {
+            @apply text-4xl font-bold
+        }
+        h2 {
+            @apply text-3xl italic
+        }
+        h3 {
+            @apply text-xl
+        }
+		p {
+			@apply py-2
+		}
+        a:hover {
+            @apply bg-zinc-600 text-white
+        }
+    </style>

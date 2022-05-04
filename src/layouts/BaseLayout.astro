@@ -1,0 +1,46 @@
+---
+import Head from '../components/Head.astro'
+import Header from '../components/Header.astro'
+import Hero from '../components/Hero.astro'
+import MainNav from '../components/MainNav.astro'
+import Aside from '../components/Aside.astro'
+import Footer from '../components/Footer.astro'
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <Head />
+</head>
+<body>
+<div id="wrapper" class="container mx-auto flex flex-col min-h-screen">
+    <header>
+        <Header />
+    </header>
+
+    <section id="hero">
+        <Hero />
+    </section>
+
+    <nav class="flex flex-col sm:flex-row">
+        <MainNav />
+    </nav>
+
+    <main class="flex-grow flex flex-col md:flex-row">
+
+        <section class="flex-grow">
+        	<slot />
+        </section>
+
+        <aside class="md:w-1/4">
+            <Aside />
+        </aside>
+
+    </main>
+    
+    <footer>
+        <Footer />
+    </footer>
+
+</div>
+</body>
+</html>
